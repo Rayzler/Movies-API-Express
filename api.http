@@ -1,0 +1,36 @@
+﻿### GET all movies
+GET http://localhost:1234/movies
+
+### GET movie by id
+GET http://localhost:1234/movies/7f6d9cf5-004c-11ef-930a-5811223cee02
+
+### GET movie by genre
+GET http://localhost:1234/movies?genre=CRIME
+
+### POST movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "Avengers: Endgame",
+  "genre": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "year": 2019,
+  "director": "Anthony Russo, Joe Russo",
+  "duration": 181,
+  "poster": "https://www.imdb.com/title/tt4154796/mediaviewer/rm4266879745"
+}
+
+### PATCH movie by id
+PATCH http://localhost:1234/movies/8c9a4ef1-005d-11ef-930a-5811223cee02
+Content-Type: application/json
+
+{
+  "rate": 9.9
+}
+
+### DELETE movie by id
+DELETE http://localhost:1234/movies/8c9a4ef1-005d-11ef-930a-5811223cee02

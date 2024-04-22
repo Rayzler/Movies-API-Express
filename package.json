@@ -1,0 +1,23 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev:mysql": "nodemon --env-file .env servers/mysql.js",
+    "dev:local": "nodemon servers/local-file-system.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "mysql2": "3.9.7",
+    "zod": "3.22.5"
+  }
+}
